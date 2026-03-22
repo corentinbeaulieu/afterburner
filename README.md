@@ -1,8 +1,7 @@
-# Afterburner · Fogburn
+# Afterburner
 
 <h3 align="center">
-  <img src="assets/palette/afterburner-primary.svg" width="80" alt="Afterburner Logo"/>
-  <img src="assets/palette/fogburn-primary.svg" width="80" alt="Fogburn Logo"/>
+  <img src="assets/logo.png" width="200" alt="Afterburner Logo"/>
 </h3>
 
 <p align="center">
@@ -21,9 +20,37 @@
 
 &nbsp;
 
+### Design philosophy
+
+International Orange was not chosen for aesthetics.
+It was specified — by engineers, for engineers — because it is the most visible color against any background: sky, fog, ocean, or darkness.
+_Conspicuity_ is the technical term.
+It means: cannot be missed.
+
+That is the standard these themes are held to.
+
+Every color earns its place through function.
+Keywords command the full <code>#FF4F00</code> — the loudest signal, reserved for what the language itself is saying.
+Functions step back to amber.
+Types recede to warm gray, a temperature-matched neutral that reads as present but not shouting.
+Numbers take teal — the maximum hue distance from orange in the palette, snapping into focus instantly.
+The hierarchy is not decorative.
+It is load-bearing.
+The backgrounds are not black and white.
+Both are calibrated to the accent, not chosen by default.
+
+The error color is International Orange (Engineering) <code>#BA160C</code> — the Golden Gate Bridge.
+Same lineage, different application: danger must be distinguishable from emphasis without abandoning the palette.
+It is the one color identical in both themes, because it already achieves correct contrast on both backgrounds and semantic consistency outweighs variation.
+
+No color in this suite was chosen because it looked nice.
+Each one was derived, tested, and held to a reason.
+
+&nbsp;
+
 ### 🎨 Palette
 
-Two variants, one identity. The accent is always International Orange. The backgrounds change; the character doesn't.
+Two variants, one identity. The accent is always International Orange. The background changes; the character doesn't.
 
 <details open>
 <summary>🔥 Afterburner (dark)</summary>
@@ -215,13 +242,8 @@ Available for the following tools and applications:
 
 - [Fish shell](./ports/fish/)
 - [Starship](./ports/starship/)
-
-</details>
-
-<details open>
-<summary>📁 File Managers</summary>
-
 - [Eza](./ports/eza/)
+- [Bat](./ports/bat/)
 
 </details>
 
@@ -231,134 +253,6 @@ Available for the following tools and applications:
 - [OpenCode](./ports/opencode/)
 
 </details>
-
-&nbsp;
-
-### 🚀 Installation
-
-### Ghostty
-
-```
-~/.config/ghostty/themes/afterburner
-~/.config/ghostty/themes/fogburn
-```
-
-```ini
-# ghostty.conf
-theme = afterburner        # or: fogburn
-```
-
-### Helix
-
-```
-~/.config/helix/themes/afterburner.toml
-~/.config/helix/themes/fogburn.toml
-```
-
-```toml
-# config.toml
-theme = "afterburner"      # or: "fogburn"
-```
-
-### Sublime Text
-
-```
-~/Library/Application Support/Sublime Text/Packages/User/Afterburner.tmTheme
-~/Library/Application Support/Sublime Text/Packages/User/Fogburn.tmTheme
-```
-
-Select via **Preferences → Color Scheme**.
-
-### Fish shell
-
-```
-~/.config/fish/conf.d/afterburner.fish
-~/.config/fish/conf.d/fogburn.fish
-```
-
-Source whichever matches your terminal background. The prompt function captures `$status` as its first line — no exit-code bleed.
-
-### Starship
-
-```
-~/.config/starship.toml
-```
-
-Prompt colors follow the same orange hierarchy: directory in full `#FF4F00` bold, username in orange mid, hostname in cursor orange. Error glyph uses `#BA160C` (Engineering) to match the error semantic.
-
-### Eza
-
-```
-~/.config/eza/theme.yml
-```
-
-Single file works with both themes — colors are mid-range hex values that maintain legibility on both backgrounds. Directory entries are bold orange; file sizes run a heat ramp (pale → orange → red as size grows).
-
-### OpenCode
-
-```
-~/.config/opencode/themes/afterburner-fogburn.json
-```
-
-```json
-// tui.json
-{ "theme": "afterburner-fogburn" }
-```
-
-Single file with `dark`/`light` splits per key — OpenCode auto-selects based on detected terminal background.
-
-### Kitty
-
-```
-~/.config/kitty/afterburner.conf
-~/.config/kitty/fogburn.conf
-```
-
-Add to your `kitty.conf`:
-```
-include afterburner.conf    # or: include fogburn.conf
-```
-
-### WezTerm
-
-```
-~/.config/wezterm/afterburner.lua
-~/.config/wezterm/fogburn.lua
-```
-
-```lua
--- wezterm.lua
-local afterburner = require('afterburner')
-return {
-  colors = afterburner.colors,
-}
-```
-
-&nbsp;
-
-### 📖 Design Decisions
-
-#### Syntax hierarchy
-
-Keywords own the full `#FF4F00`. Functions step back to amber `#E09B30` italic. Types recede further to warm gray `#A89888` italic — after tuning against C++ codebases where `std::`, `int`, and `void` would otherwise compete with `template` and `using` for the same visual weight. Strings take orange mid `#FF7A33`. Numbers take teal `#4DBFA8` — the furthest hue from orange in the palette, providing instant differentiation.
-
-#### Why two oranges?
-
-The **primary accent** is [International Orange (Aerospace)](https://en.wikipedia.org/wiki/International_orange#Aerospace) `#FF4F00` — used on NASA flight suits, the Bell X-1, and search-and-rescue equipment. It was chosen for *conspicuity*: maximum visibility against any background.
-
-The **error/red** is [International Orange (Engineering)](https://en.wikipedia.org/wiki/International_orange#Engineering) `#BA160C` — the color of the Golden Gate Bridge. Same family, different application. Danger signals stay semantically distinct from the accent without reaching for an unrelated hue.
-
-#### The warm gray
-
-`#A89888` — used for `storage.type` builtins, namespaces, and warm-neutral UI text. Not cold gray (`#888888`), not full orange. It sits in the same color temperature as the background and accent, so recessed elements feel like they belong rather than being imposed from a different palette.
-
-#### Light theme background
-
-`#F5F0EB` rather than `#FFFFFF`. Pure white against `#FF4F00` halates — the orange blooms optically against a stark white field. The warm off-white pulls the background toward the accent's own undertone. The same logic applies to the near-black `#0D0D0D` in the dark theme: pure black makes high-saturation warm colors feel harsh.
-
-#### Error color consistency
-
-`#BA160C` stays identical in both variants — it already sits at the correct contrast ratio on both backgrounds, and changing it would break cross-theme semantic consistency.
 
 &nbsp;
 
