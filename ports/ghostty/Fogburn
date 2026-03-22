@@ -1,0 +1,29 @@
+# Fogburn — International Orange (Aerospace), light variant
+# Pair with: Afterburner (dark)
+# https://en.wikipedia.org/wiki/International_orange_(aerospace)
+
+background = #F5F0EB
+foreground = #2A2218
+cursor-color = #A33200
+selection-background = #EDE5DC
+selection-foreground = #2A2218
+
+# Normal (0–7)
+palette = 0=#EDE5DC
+palette = 1=#BA160C
+palette = 2=#2E7D4F
+palette = 3=#9A6A10
+palette = 4=#2A6A9A
+palette = 5=#7058C0
+palette = 6=#2D8C7A
+palette = 7=#5A5248
+
+# Bright (8–15)
+palette = 8=#9A9088
+palette = 9=#D4352A
+palette = 10=#3E9E64
+palette = 11=#C94000
+palette = 12=#3A7AB5
+palette = 13=#D45A00
+palette = 14=#B87040
+palette = 15=#2A2218

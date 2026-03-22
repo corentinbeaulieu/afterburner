@@ -1,0 +1,122 @@
+# Afterburner / Fogburn — International Orange (Aerospace)
+# Works with both dark (Afterburner) and light (Fogburn) terminal backgrounds.
+# Color strategy: mid-range hex values avoid being invisible on either extreme.
+# Install: ~/.config/eza/theme.yml  (or $EZA_CONFIG_DIR/theme.yml)
+
+colourful: true
+
+# ── File kinds ─────────────────────────────────────────────────────────────
+filekinds:
+  normal:        {foreground: "#8A8070"}
+  directory:     {foreground: "#C94000", is_bold: true}
+  symlink:       {foreground: "#3AADA0"}
+  pipe:          {foreground: "#A89888"}
+  block_device:  {foreground: "#3A7AB5"}
+  char_device:   {foreground: "#2A6A9A"}
+  socket:        {foreground: "#7058C0"}
+  special:       {foreground: "#7058C0"}
+  executable:    {foreground: "#3E9E64", is_bold: true}
+  mount_point:   {foreground: "#2D8C7A", is_bold: true}
+
+# ── Permissions ────────────────────────────────────────────────────────────
+# User tier: bold and saturated — most important
+# Group tier: normal weight — secondary
+# Other tier: muted — least important
+perms:
+  user_read:          {foreground: "#D45A00",      is_bold: true}
+  user_write:         {foreground: "#B07C18",      is_bold: true}
+  user_execute_file:  {foreground: "#3E9E64",      is_bold: true}
+  user_execute_other: {foreground: "#2E7D4F",      is_bold: true}
+  group_read:         {foreground: "#B87040"}
+  group_write:        {foreground: "#9A6A10"}
+  group_execute:      {foreground: "#2E7D4F"}
+  other_read:         {foreground: "#A89888"}
+  other_write:        {foreground: "#BA160C"}       # world-writable = danger
+  other_execute:      {foreground: "#9A9088"}
+  special_user_file:  {foreground: "#7058C0",       is_bold: true}
+  special_other:      {foreground: "#7058C0"}
+  attribute:          {foreground: "#A89888"}
+
+# ── File sizes ─────────────────────────────────────────────────────────────
+# Orange ramp: small files cool (pale), large files hot (bold orange → red)
+size:
+  major:       {foreground: "#9A9088"}
+  minor:       {foreground: "#A89888"}
+  number_byte: {foreground: "#A89888"}
+  number_kilo: {foreground: "#B87040"}
+  number_mega: {foreground: "#D45A00"}
+  number_giga: {foreground: "#C94000",  is_bold: true}
+  number_huge: {foreground: "#BA160C",   is_bold: true}
+  unit_byte:   {foreground: "#A89888"}
+  unit_kilo:   {foreground: "#B87040"}
+  unit_mega:   {foreground: "#D45A00"}
+  unit_giga:   {foreground: "#C94000"}
+  unit_huge:   {foreground: "#BA160C"}
+
+# ── Users & groups ─────────────────────────────────────────────────────────
+users:
+  user_you:    {foreground: "#D45A00",      is_bold: true}
+  user_root:   {foreground: "#BA160C",       is_bold: true}
+  user_other:  {foreground: "#B87040"}
+  group_yours: {foreground: "#A33200"}
+  group_other: {foreground: "#A89888"}
+  group_root:  {foreground: "#BA160C"}
+
+# ── Links ──────────────────────────────────────────────────────────────────
+links:
+  normal:         {foreground: "#3AADA0"}
+  multi_link_file: {foreground: "#2D8C7A", is_bold: true}
+
+# ── Git status ─────────────────────────────────────────────────────────────
+git:
+  new:        {foreground: "#3E9E64",  is_bold: true}
+  modified:   {foreground: "#D45A00",  is_bold: true}
+  deleted:    {foreground: "#BA160C",  is_bold: true}
+  renamed:    {foreground: "#3AADA0"}
+  typechange: {foreground: "#B07C18"}
+  ignored:    {foreground: "#A89888"}
+  conflicted: {foreground: "#D4352A",  is_bold: true}
+
+# ── Git repo ───────────────────────────────────────────────────────────────
+git_repo:
+  branch_main:  {foreground: "#C94000", is_bold: true}
+  branch_other: {foreground: "#A33200"}
+  git_clean:    {foreground: "#2E7D4F"}
+  git_dirty:    {foreground: "#B07C18"}
+
+# ── Security context (SELinux) ─────────────────────────────────────────────
+security_context:
+  colon: {foreground: "#A89888"}
+  user:  {foreground: "#B87040"}
+  role:  {foreground: "#2D8C7A"}
+  typ:   {foreground: "#D45A00"}
+  range: {foreground: "#9A9088"}
+
+# ── File types ─────────────────────────────────────────────────────────────
+file_type:
+  image:      {foreground: "#B07C18"}
+  video:      {foreground: "#7058C0"}
+  music:      {foreground: "#3AADA0"}
+  lossless:   {foreground: "#2D8C7A"}
+  crypto:     {foreground: "#7058C0",      is_bold: true}
+  document:   {foreground: "#3A7AB5"}
+  compressed: {foreground: "#B87040"}
+  temp:       {foreground: "#A89888"}
+  compiled:   {foreground: "#9A9088"}
+  build:      {foreground: "#B87040"}
+  source:     {foreground: "#8A8070"}
+
+# ── Metadata columns ───────────────────────────────────────────────────────
+punctuation:        {foreground: "#A89888"}
+date:              {foreground: "#B87040"}
+inode:             {foreground: "#9A9088"}
+blocks:            {foreground: "#9A9088"}
+header:            {foreground: "#C94000", is_bold: true}
+octal:             {foreground: "#2D8C7A"}
+flags:             {foreground: "#7058C0"}
+
+# ── Symlink paths & broken links ───────────────────────────────────────────
+symlink_path:         {foreground: "#3AADA0"}
+control_char:         {foreground: "#BA160C"}
+broken_symlink:       {foreground: "#BA160C",       is_bold: true}
+broken_path_overlay:   {foreground: "#D4352A"}

@@ -1,0 +1,117 @@
+# Fogburn — International Orange (Aerospace), light variant
+# Place in $XDG_CONFIG_HOME/helix/themes/ and set theme = "fogburn" in config.toml
+# Pair with: afterburner (dark)
+
+"ui.background"              = { bg = "bg" }
+"ui.background.separator"    = { fg = "border" }
+"ui.window"                  = { fg = "subtle" }
+"ui.gutter"                  = { fg = "subtle", bg = "bg" }
+"ui.gutter.selected"         = { fg = "orange", bg = "bg" }
+"ui.linenr"                  = { fg = "subtle" }
+"ui.linenr.selected"         = { fg = "orange_mid", modifiers = ["bold"] }
+"ui.cursorline.primary"      = { bg = "surface" }
+"ui.cursor"                  = { fg = "bg", bg = "cursor" }
+"ui.cursor.primary"          = { fg = "bg", bg = "cursor" }
+"ui.cursor.match"            = { fg = "bg", bg = "orange_dark" }
+"ui.selection"               = { bg = "surface" }
+"ui.statusline"              = { fg = "fg", bg = "surface" }
+"ui.statusline.active"       = { fg = "orange", bg = "surface", modifiers = ["bold"] }
+"ui.statusline.inactive"     = { fg = "subtle", bg = "surface" }
+"ui.statusline.separator"    = { fg = "subtle" }
+"ui.popup"                   = { fg = "fg", bg = "bg" }
+"ui.popup.info"              = { fg = "info", bg = "bg" }
+"ui.menu"                    = { fg = "fg", bg = "bg" }
+"ui.menu.selected"           = { fg = "bg", bg = "orange" }
+"ui.menu.scroll"             = { fg = "subtle" }
+"ui.help"                    = { fg = "fg", bg = "bg" }
+"ui.highlight"               = { bg = "surface" }
+"ui.text"                    = { fg = "fg" }
+"ui.text.focus"              = { fg = "orange", modifiers = ["bold"] }
+"ui.virtual.ruler"           = { bg = "surface" }
+"ui.virtual.inlay-hint"      = { fg = "subtle" }
+"ui.virtual.indent-guide"    = { fg = "border" }
+"ui.virtual.jump-label"      = { fg = "orange", modifiers = ["bold"] }
+
+"diagnostic.error"           = { underline = { color = "red", style = "curl" } }
+"diagnostic.warning"         = { underline = { color = "amber", style = "curl" } }
+"diagnostic.info"            = { underline = { color = "info", style = "curl" } }
+"diagnostic.hint"            = { underline = { color = "teal", style = "dotted" } }
+"error"                      = { fg = "red" }
+"warning"                    = { fg = "amber" }
+"info"                       = { fg = "info" }
+"hint"                       = { fg = "teal" }
+
+# Syntax
+"keyword"                    = { fg = "orange", modifiers = ["bold"] }
+"keyword.control"            = { fg = "orange" }
+"keyword.operator"           = { fg = "orange_mid" }
+"keyword.directive"          = { fg = "orange_pale" }
+"operator"                   = { fg = "teal" }
+"punctuation"                = { fg = "fg" }
+"punctuation.bracket"        = { fg = "dim" }
+"punctuation.delimiter"      = { fg = "dim" }
+"comment"                    = { fg = "comment", modifiers = ["italic"] }
+
+"string"                     = { fg = "orange_mid" }
+"string.special"             = { fg = "orange_pale" }
+"string.regexp"              = { fg = "amber" }
+"constant"                   = { fg = "purple" }
+"constant.numeric"           = { fg = "teal" }
+"constant.builtin"           = { fg = "orange_dark" }
+"constant.character.escape"  = { fg = "amber" }
+
+"type"                       = { fg = "orange_pale" }
+"type.builtin"               = { fg = "warm_gray", modifiers = ["italic"] }
+"constructor"                = { fg = "orange_pale" }
+"namespace"                  = { fg = "warm_gray", modifiers = ["italic"] }
+"attribute"                  = { fg = "purple" }
+"label"                      = { fg = "orange_mid" }
+
+"function"                   = { fg = "amber", modifiers = ["italic"] }
+"function.builtin"           = { fg = "amber", modifiers = ["italic"] }
+"function.macro"             = { fg = "amber", modifiers = ["bold"] }
+"function.special"           = { fg = "orange_mid", modifiers = ["bold"] }
+"variable"                   = { fg = "fg" }
+"variable.builtin"           = { fg = "orange", modifiers = ["italic"] }
+"variable.parameter"         = { fg = "fg", modifiers = ["italic"] }
+"variable.other.member"      = { fg = "fg" }
+
+"tag"                        = { fg = "orange", modifiers = ["bold"] }
+"tag.attribute"              = { fg = "orange_mid" }
+"tag.error"                  = { fg = "red" }
+
+"diff.plus"                  = { fg = "green" }
+"diff.minus"                 = { fg = "red" }
+"diff.delta"                 = { fg = "amber" }
+
+"markup.heading"             = { fg = "orange", modifiers = ["bold"] }
+"markup.list"                = { fg = "orange_mid" }
+"markup.bold"                = { fg = "fg", modifiers = ["bold"] }
+"markup.italic"              = { fg = "fg", modifiers = ["italic"] }
+"markup.strikethrough"       = { fg = "subtle", modifiers = ["crossed_out"] }
+"markup.link.url"            = { fg = "info", modifiers = ["underlined"] }
+"markup.link.text"           = { fg = "orange_pale" }
+"markup.raw"                 = { fg = "teal" }
+
+[palette]
+bg           = "#F5F0EB"
+surface      = "#EDE5DC"
+border       = "#DDD5CC"
+fg           = "#2A2218"
+dim          = "#9A9088"
+subtle       = "#9A9088"
+comment      = "#A89888"
+cursor       = "#A33200"
+
+orange       = "#C94000"
+orange_mid   = "#D45A00"
+orange_pale  = "#B87040"
+orange_dark  = "#A33200"
+warm_gray    = "#A89888"
+
+red          = "#BA160C"
+green        = "#2E7D4F"
+amber        = "#9A6A10"
+info         = "#2A6A9A"
+purple       = "#7058C0"
+teal         = "#2D8C7A"

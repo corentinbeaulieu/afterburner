@@ -1,0 +1,117 @@
+# Afterburner — International Orange (Aerospace), dark variant
+# Place in $XDG_CONFIG_HOME/helix/themes/ and set theme = "afterburner" in config.toml
+# Pair with: fogburn (light)
+
+"ui.background"              = { bg = "bg" }
+"ui.background.separator"    = { fg = "surface" }
+"ui.window"                  = { fg = "dim" }
+"ui.gutter"                  = { fg = "dim", bg = "bg" }
+"ui.gutter.selected"         = { fg = "orange", bg = "bg" }
+"ui.linenr"                  = { fg = "dim" }
+"ui.linenr.selected"         = { fg = "orange_mid", modifiers = ["bold"] }
+"ui.cursorline.primary"      = { bg = "surface" }
+"ui.cursor"                  = { fg = "bg", bg = "cursor" }
+"ui.cursor.primary"          = { fg = "bg", bg = "cursor" }
+"ui.cursor.match"            = { fg = "bg", bg = "orange_dark" }
+"ui.selection"               = { bg = "selection" }
+"ui.statusline"              = { fg = "fg", bg = "surface" }
+"ui.statusline.active"       = { fg = "orange", bg = "surface", modifiers = ["bold"] }
+"ui.statusline.inactive"     = { fg = "dim", bg = "surface" }
+"ui.statusline.separator"    = { fg = "dim" }
+"ui.popup"                   = { fg = "fg", bg = "surface" }
+"ui.popup.info"              = { fg = "info", bg = "surface" }
+"ui.menu"                    = { fg = "fg", bg = "surface" }
+"ui.menu.selected"           = { fg = "bg", bg = "orange" }
+"ui.menu.scroll"             = { fg = "dim" }
+"ui.help"                    = { fg = "fg", bg = "surface" }
+"ui.highlight"               = { bg = "selection" }
+"ui.text"                    = { fg = "fg" }
+"ui.text.focus"              = { fg = "orange", modifiers = ["bold"] }
+"ui.virtual.ruler"           = { bg = "surface" }
+"ui.virtual.inlay-hint"      = { fg = "dim" }
+"ui.virtual.indent-guide"    = { fg = "dim" }
+"ui.virtual.jump-label"      = { fg = "orange", modifiers = ["bold"] }
+
+"diagnostic.error"           = { underline = { color = "red", style = "curl" } }
+"diagnostic.warning"         = { underline = { color = "amber", style = "curl" } }
+"diagnostic.info"            = { underline = { color = "info", style = "curl" } }
+"diagnostic.hint"            = { underline = { color = "teal", style = "dotted" } }
+"error"                      = { fg = "red" }
+"warning"                    = { fg = "amber" }
+"info"                       = { fg = "info" }
+"hint"                       = { fg = "teal" }
+
+# Syntax
+"keyword"                    = { fg = "orange", modifiers = ["bold"] }
+"keyword.control"            = { fg = "orange" }
+"keyword.operator"           = { fg = "orange_mid" }
+"keyword.directive"          = { fg = "orange_pale" }
+"operator"                   = { fg = "teal" }
+"punctuation"                = { fg = "fg" }
+"punctuation.bracket"        = { fg = "dim_bright" }
+"punctuation.delimiter"      = { fg = "dim_bright" }
+"comment"                    = { fg = "comment", modifiers = ["italic"] }
+
+"string"                     = { fg = "orange_mid" }
+"string.special"             = { fg = "orange_pale" }
+"string.regexp"              = { fg = "amber" }
+"constant"                   = { fg = "purple" }
+"constant.numeric"           = { fg = "teal" }
+"constant.builtin"           = { fg = "orange_dark" }
+"constant.character.escape"  = { fg = "amber" }
+
+"type"                       = { fg = "orange_pale" }
+"type.builtin"               = { fg = "warm_gray" }
+"constructor"                = { fg = "warm_gray" }
+"namespace"                  = { fg = "warm_gray" }
+"attribute"                  = { fg = "purple" }
+"label"                      = { fg = "orange_mid" }
+
+"function"                   = { fg = "amber", modifiers = ["italic"] }
+"function.builtin"           = { fg = "amber", modifiers = ["italic"] }
+"function.macro"             = { fg = "amber", modifiers = ["bold"] }
+"function.special"           = { fg = "orange_mid", modifiers = ["bold"] }
+"variable"                   = { fg = "fg" }
+"variable.builtin"           = { fg = "orange" }
+"variable.parameter"         = { fg = "fg" }
+"variable.other.member"      = { fg = "fg" }
+
+"tag"                        = { fg = "orange", modifiers = ["bold"] }
+"tag.attribute"              = { fg = "orange_mid" }
+"tag.error"                  = { fg = "red" }
+
+"diff.plus"                  = { fg = "green" }
+"diff.minus"                 = { fg = "red" }
+"diff.delta"                 = { fg = "amber" }
+
+"markup.heading"             = { fg = "orange", modifiers = ["bold"] }
+"markup.list"                = { fg = "orange_mid" }
+"markup.bold"                = { fg = "fg", modifiers = ["bold"] }
+"markup.italic"              = { fg = "fg", modifiers = ["italic"] }
+"markup.strikethrough"       = { fg = "dim", modifiers = ["crossed_out"] }
+"markup.link.url"            = { fg = "info", modifiers = ["underlined"] }
+"markup.link.text"           = { fg = "orange_pale" }
+"markup.raw"                 = { fg = "teal" }
+
+[palette]
+bg           = "#0d0d0d"
+surface      = "#1a1a1a"
+selection    = "#2a1500"
+fg           = "#e0e0e0"
+dim          = "#444444"
+dim_bright   = "#666666"
+comment      = "#4a4a4a"
+cursor       = "#cc3f00"
+
+orange       = "#ff4f00"
+orange_mid   = "#ff7a33"
+orange_pale  = "#ffb380"
+orange_dark  = "#cc3f00"
+warm_gray    = "#a89888"
+
+red          = "#ba160c"
+green        = "#5fbf7e"
+amber        = "#e09b30"
+info         = "#4a8ab5"
+purple       = "#a07de0"
+teal         = "#4dbfa8"

@@ -1,0 +1,58 @@
+format = """
+$username@$hostname :: \
+$directory\
+$character
+"""
+
+right_format = """
+$git_branch\
+$git_state\
+$git_status\
+$cmd_duration
+"""
+
+[username]
+style_user = "bright-yellow"
+format = "[$user]($style)"
+show_always = true
+disabled = false
+aliases = { "gdossantos" = "gabriel" }
+
+[hostname]
+style = "bright-purple"
+format = "[$ssh_symbol$hostname]($style)"
+ssh_only = false
+disabled = false
+
+[directory]
+style = "bright-yellow bold"
+truncation_symbol = '…/'
+
+[character]
+success_symbol = "[\\$](bright-yellow)"
+error_symbol = "[\\$](red)"
+vimcmd_symbol = "[▷](blue)"
+
+[git_branch]
+style = "bright-purple"
+format = "[$branch]($style)"
+
+[git_status]
+style = "bright-red"
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](color:#ff7a33) ($ahead_behind$stashed)]($style) "
+
+[git_state]
+style = "bright-red"
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+
+[cmd_duration]
+style = "bright-black"
+format = "[$duration]($style) "
+
+[python]
+style = "green"
+format = "[$virtualenv]($style) "
+
+[spack]
+style = "cyan"
+format = "[$virtualenv]($style) "
