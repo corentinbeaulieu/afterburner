@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+    <!-- Background -->
+    <rect width="1200" height="900" fill="#1a1a1a"/>
+
+    <!-- Title -->
+    <text x="600" y="40" fill="#ffffff" font-family="monospace" font-size="20" text-anchor="middle" font-weight="bold">Afterburner · Fogburn</text>
+
+    <!-- Afterburner Section -->
+    <text x="50" y="80" fill="#FF4F00" font-family="monospace" font-size="16" font-weight="bold">Afterburner (dark)</text>
+    <g transform="translate(50, 100)">
+        <!-- Background -->
+        <circle cx="40" cy="40" r="35" fill="#0D0D0D"/>
+        <text x="40" y="95" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">Background</text>
+        <text x="40" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#0D0D0D</text>
+
+        <!-- Foreground -->
+        <circle cx="120" cy="40" r="35" fill="#E0E0E0"/>
+        <text x="120" y="95" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">Foreground</text>
+        <text x="120" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#E0E0E0</text>
+
+        <!-- Primary -->
+        <circle cx="200" cy="40" r="35" fill="#FF4F00"/>
+        <text x="200" y="95" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">Primary</text>
+        <text x="200" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#FF4F00</text>
+
+        <!-- Orange Mid -->
+        <circle cx="280" cy="40" r="35" fill="#FF7A33"/>
+        <text x="280" y="95" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">Orange Mid</text>
+        <text x="280" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#FF7A33</text>
+
+        <!-- Orange Pale -->
+        <circle cx="360" cy="40" r="35" fill="#FFB380"/>
+        <text x="360" y="95" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">Orange Pale</text>
+        <text x="360" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#FFB380</text>
+
+        <!-- Cursor -->
+        <circle cx="440" cy="40" r="35" fill="#CC3F00"/>
+        <text x="440" y="95" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">Cursor</text>
+        <text x="440" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#CC3F00</text>
+
+        <!-- Selection -->
+        <circle cx="520" cy="40" r="35" fill="#2A1500"/>
+        <text x="520" y="95" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">Selection</text>
+        <text x="520" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#2A1500</text>
+
+        <!-- Red -->
+        <circle cx="600" cy="40" r="35" fill="#BA160C"/>
+        <text x="600" y="95" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">Red</text>
+        <text x="600" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#BA160C</text>
+
+        <!-- Green -->
+        <circle cx="680" cy="40" r="35" fill="#5FBF7E"/>
+        <text x="680" y="95" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">Green</text>
+        <text x="680" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#5FBF7E</text>
+
+        <!-- Amber -->
+        <circle cx="760" cy="40" r="35" fill="#E09B30"/>
+        <text x="760" y="95" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">Amber</text>
+        <text x="760" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#E09B30</text>
+
+        <!-- Teal -->
+        <circle cx="840" cy="40" r="35" fill="#4DBFA8"/>
+        <text x="840" y="95" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">Teal</text>
+        <text x="840" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#4DBFA8</text>
+
+        <!-- Blue -->
+        <circle cx="920" cy="40" r="35" fill="#4A8AB5"/>
+        <text x="920" y="95" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">Blue</text>
+        <text x="920" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#4A8AB5</text>
+
+        <!-- Purple -->
+        <circle cx="1000" cy="40" r="35" fill="#A07DE0"/>
+        <text x="1000" y="95" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">Purple</text>
+        <text x="1000" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#A07DE0</text>
+
+        <!-- Warm Gray -->
+        <circle cx="1080" cy="40" r="35" fill="#A89888"/>
+        <text x="1080" y="95" fill="#ffffff" font-family="monospace" font-size="11" text-anchor="middle">Warm Gray</text>
+        <text x="1080" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#A89888</text>
+    </g>
+
+    <!-- Fogburn Section -->
+    <text x="50" y="260" fill="#C94000" font-family="monospace" font-size="16" font-weight="bold">Fogburn (light)</text>
+    <g transform="translate(50, 280)">
+        <!-- Background -->
+        <circle cx="40" cy="40" r="35" fill="#F5F0EB"/>
+        <text x="40" y="95" fill="#2A2218" font-family="monospace" font-size="11" text-anchor="middle">Background</text>
+        <text x="40" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#F5F0EB</text>
+
+        <!-- Foreground -->
+        <circle cx="120" cy="40" r="35" fill="#2A2218"/>
+        <text x="120" y="95" fill="#2A2218" font-family="monospace" font-size="11" text-anchor="middle">Foreground</text>
+        <text x="120" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#2A2218</text>
+
+        <!-- Primary -->
+        <circle cx="200" cy="40" r="35" fill="#C94000"/>
+        <text x="200" y="95" fill="#2A2218" font-family="monospace" font-size="11" text-anchor="middle">Primary</text>
+        <text x="200" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#C94000</text>
+
+        <!-- Orange Mid -->
+        <circle cx="280" cy="40" r="35" fill="#D45A00"/>
+        <text x="280" y="95" fill="#2A2218" font-family="monospace" font-size="11" text-anchor="middle">Orange Mid</text>
+        <text x="280" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#D45A00</text>
+
+        <!-- Orange Pale -->
+        <circle cx="360" cy="40" r="35" fill="#B87040"/>
+        <text x="360" y="95" fill="#2A2218" font-family="monospace" font-size="11" text-anchor="middle">Orange Pale</text>
+        <text x="360" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#B87040</text>
+
+        <!-- Cursor -->
+        <circle cx="440" cy="40" r="35" fill="#A33200"/>
+        <text x="440" y="95" fill="#F5F0EB" font-family="monospace" font-size="11" text-anchor="middle">Cursor</text>
+        <text x="440" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#A33200</text>
+
+        <!-- Selection -->
+        <circle cx="520" cy="40" r="35" fill="#EDE5DC"/>
+        <text x="520" y="95" fill="#2A2218" font-family="monospace" font-size="11" text-anchor="middle">Selection</text>
+        <text x="520" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#EDE5DC</text>
+
+        <!-- Red -->
+        <circle cx="600" cy="40" r="35" fill="#BA160C"/>
+        <text x="600" y="95" fill="#F5F0EB" font-family="monospace" font-size="11" text-anchor="middle">Red</text>
+        <text x="600" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#BA160C</text>
+
+        <!-- Green -->
+        <circle cx="680" cy="40" r="35" fill="#2E7D4F"/>
+        <text x="680" y="95" fill="#2A2218" font-family="monospace" font-size="11" text-anchor="middle">Green</text>
+        <text x="680" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#2E7D4F</text>
+
+        <!-- Amber -->
+        <circle cx="760" cy="40" r="35" fill="#9A6A10"/>
+        <text x="760" y="95" fill="#F5F0EB" font-family="monospace" font-size="11" text-anchor="middle">Amber</text>
+        <text x="760" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#9A6A10</text>
+
+        <!-- Teal -->
+        <circle cx="840" cy="40" r="35" fill="#2D8C7A"/>
+        <text x="840" y="95" fill="#F5F0EB" font-family="monospace" font-size="11" text-anchor="middle">Teal</text>
+        <text x="840" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#2D8C7A</text>
+
+        <!-- Blue -->
+        <circle cx="920" cy="40" r="35" fill="#2A6A9A"/>
+        <text x="920" y="95" fill="#F5F0EB" font-family="monospace" font-size="11" text-anchor="middle">Blue</text>
+        <text x="920" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#2A6A9A</text>
+
+        <!-- Purple -->
+        <circle cx="1000" cy="40" r="35" fill="#7058C0"/>
+        <text x="1000" y="95" fill="#F5F0EB" font-family="monospace" font-size="11" text-anchor="middle">Purple</text>
+        <text x="1000" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#7058C0</text>
+
+        <!-- Warm Gray -->
+        <circle cx="1080" cy="40" r="35" fill="#A89888"/>
+        <text x="1080" y="95" fill="#F5F0EB" font-family="monospace" font-size="11" text-anchor="middle">Warm Gray</text>
+        <text x="1080" y="110" fill="#888888" font-family="monospace" font-size="9" text-anchor="middle">#A89888</text>
+    </g>
+
+    <!-- Footer -->
+    <text x="600" y="500" fill="#A89888" font-family="monospace" font-size="12" text-anchor="middle">International Orange color themes for developers</text>
+</svg>
